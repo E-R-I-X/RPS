@@ -47,10 +47,12 @@ function playGame(playerChoice) {
 
   // Check for game winner
   if (playerScore === WINNING_SCORE) {
-    resultDisplay.textContent = "🏆 YOU WIN THE GAME!";
+    resultDisplay.textContent = "YOU WIN THE GAME!";
     resetBtn.style.display = "block";
+    resultDisplay.classList.add("green");
   } else if (computerScore === WINNING_SCORE) {
-    resultDisplay.textContent = "💀 COMPUTER WINS THE GAME!";
+    resultDisplay.textContent = "COMPUTER WINS THE GAME!";
+    resultDisplay.classList.add("red");
     resetBtn.style.display = "block";
   }
 }
