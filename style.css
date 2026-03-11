@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter";
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: hsl(0, 0%, 12%);
+  padding: 2rem;
+  margin: 0 1rem;
+  border-radius: 1.5rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.choices {
+  margin: 1rem 0;
+}
+
+.choices button {
+  font-size: 4rem;
+  height: 6rem;
+  width: 6rem;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  background: hsl(340, 98%, 65%);
+  border: none;
+  transition: all ease 0.5s;
+}
+
+.choices button:hover {
+  background: hsla(340, 98%, 65%, 0.781);
+}
+
+#choicesDisplay {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#resultDisplay {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.green {
+  color: rgb(2, 241, 2);
+}
+
+.red {
+  color: rgb(255, 2, 2);
+}
+
+#resetBtn {
+  display: none;
+  margin-top: 1rem;
+  padding: 0.5rem 2.25rem;
+  color: white;
+  background: hsl(340, 98%, 65%);
+  font-weight: bold;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Inter";
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
