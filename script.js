@@ -65,5 +65,7 @@ function resetGame() {
   playerChoiceDisplay.textContent = "";
   computerChoiceDisplay.textContent = "";
   resultDisplay.textContent = "Make your move!";
+  resultDisplay.classList.remove("red");
+  resultDisplay.classList.remove("green");
   resetBtn.style.display = "none";
 }
